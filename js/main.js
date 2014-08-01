@@ -4,19 +4,24 @@ function init(){
 	$("video").on("ended", function(){
 		console.log("ended, looping");
 		if(!isAttract){
-			$("#vid")[0]="vid/menu.ogv";
+			$("#vid")[0].src="vid/menu.ogv";
 			isAttract = true;
 		}
 		this.load();
 	})
+	
 	$("#wrap").click(function(c){
-		m = 1366/4;
-		i = ~~( c.clientX/m ) ;
-		isAttract = false;
-		var v = $("#vid")[0];
-		v.src="vid/"+vids[i];
-		vid.load();
+		if(isAttract){
+			isAttract = false;
+			m = 1366/4;
+			i = ~~( c.clientX/m ) ;
+			var v = $("#vid")[0];
+			v.src="vid/"+vids[i];
+			vid.load();
+		}
+		
 	})
+	
 }
 function playAttract(){
 	
