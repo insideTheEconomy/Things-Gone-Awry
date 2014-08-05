@@ -10,7 +10,7 @@
   "window": {
     "title": "Things Gone Awry",
     "icon": "link.png",
-    "toolbar": true,
+    "toolbar": false,
     "frame": true,
     "width": 1366,
     "height": 768,
@@ -19,7 +19,7 @@
     "min_height": 200,
     "max_width": 800,
     "max_height": 600,
-    "kiosk": false
+    "kiosk": true
   },
   "webkit": {
     "plugin": false

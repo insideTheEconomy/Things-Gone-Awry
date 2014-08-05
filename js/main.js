@@ -11,7 +11,9 @@ function init(){
 	})
 	
 	$("#wrap").click(function(c){
+		
 		if(isAttract){
+			click();
 			isAttract = false;
 			m = 1366/4;
 			i = ~~( c.clientX/m ) ;
@@ -23,9 +25,11 @@ function init(){
 	})
 	
 }
-function playAttract(){
-	
+function click(){
+	$("audio")[0].load();
+	$("audio")[0].play();
 }
+
 $(function(){
 	init();
 })
