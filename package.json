@@ -11,7 +11,9 @@
     "title": "Things Gone Awry",
     "icon": "link.png",
     "toolbar": false,
+
     "frame": true,
+
     "width": 1366,
     "height": 768,
     "position": "mouse",
